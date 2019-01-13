@@ -31,24 +31,58 @@
                                     <action selector="buttonTapped1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M14-ji-0RP"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-CI-PN0">
+                                <rect key="frame" x="137.5" y="281" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ioz-ge-qBO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-NN-JtA">
+                                <rect key="frame" x="137.5" y="243" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tsc-nK-7U0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-RM-c1d">
+                                <rect key="frame" x="163" y="204" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yrA-XQ-sGx" firstAttribute="top" secondItem="CLR-8z-Dl8" secondAttribute="bottom" constant="8" id="5Oz-8P-3ra"/>
+                            <constraint firstItem="ubo-CI-PN0" firstAttribute="centerX" secondItem="0W3-NN-JtA" secondAttribute="centerX" id="5iT-fl-Ps5"/>
+                            <constraint firstItem="kW8-RM-c1d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F9k-rr-XHS"/>
                             <constraint firstItem="yrA-XQ-sGx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HNo-5h-X7s"/>
                             <constraint firstItem="yrA-XQ-sGx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="33.5" id="OM7-wx-okq"/>
+                            <constraint firstItem="kW8-RM-c1d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-114" id="Pwc-SN-MJl"/>
                             <constraint firstItem="CLR-8z-Dl8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T1G-Zw-rLg"/>
+                            <constraint firstItem="ubo-CI-PN0" firstAttribute="centerX" secondItem="CLR-8z-Dl8" secondAttribute="centerX" id="a98-Zb-8it"/>
                             <constraint firstItem="CLR-8z-Dl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gC7-Xd-Ygb"/>
                             <constraint firstItem="CLR-8z-Dl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiY-xU-Ahs"/>
+                            <constraint firstItem="kW8-RM-c1d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i7o-CP-iul"/>
+                            <constraint firstItem="kW8-RM-c1d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lKx-Cg-bCc"/>
+                            <constraint firstItem="0W3-NN-JtA" firstAttribute="top" secondItem="kW8-RM-c1d" secondAttribute="bottom" constant="8" id="o56-A0-ooi"/>
+                            <constraint firstItem="CLR-8z-Dl8" firstAttribute="top" secondItem="0W3-NN-JtA" secondAttribute="bottom" constant="50" id="qnJ-sf-ctQ"/>
+                            <constraint firstItem="ubo-CI-PN0" firstAttribute="centerY" secondItem="0W3-NN-JtA" secondAttribute="centerY" constant="38" id="xNQ-Cv-Wzy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="BottomTextField" destination="ubo-CI-PN0" id="z7U-4f-00r"/>
+                        <outlet property="TopTextField" destination="0W3-NN-JtA" id="nfc-Eh-Adx"/>
+                        <outlet property="additionSwitch" destination="kW8-RM-c1d" id="KHt-yn-u1d"/>
                         <outlet property="myLabel" destination="CLR-8z-Dl8" id="9Ng-eF-gLh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="105.69715142428787"/>
         </scene>
     </scenes>
 </document>
